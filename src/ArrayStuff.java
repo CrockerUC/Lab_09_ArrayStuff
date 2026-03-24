@@ -63,5 +63,17 @@ public class ArrayStuff
         }
         System.out.println("The minimum value is: " + min);
         System.out.println("The maximum value is: " + max);
+
+        System.out.println("Average of dataPoints is: " + getAverage(dataPoints));
+    }
+
+    public static double getAverage(int values[])
+    {
+        int sum = 0;
+        for(int i = 0; i < values.length; i++)
+        {
+            sum += values[i];
+        }
+        return (double)sum / values.length;
     }
 }
